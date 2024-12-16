@@ -74,6 +74,7 @@ public class User {
         .statusCode(401);
 	}
 
+	
 	@Test(dependsOnMethods = {"postUserLogin"})
 	void getAllUserList() {
 		given()
