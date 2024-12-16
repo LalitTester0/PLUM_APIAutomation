@@ -1,0 +1,285 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>41/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Dec 12 17:46:25 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>166 seconds (166473 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='api.Editor_Data.get_code_to_editor_backtest_Allocation_percentage_plot()'><b>get_code_to_editor_backtest_Allocation_percentage_plot</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>1</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.Editor_Data.put_save_code_db_Monthly_pnl_heatmap()'><b>put_save_code_db_Monthly_pnl_heatmap</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>1</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.Portfolio.getPortfolio_Growth_PlotGraph()'><b>getPortfolio_Growth_PlotGraph</b><br>Test class: api.Portfolio</td>
+<td></td>
+<td>9</td>
+<td>api.Portfolio@1ce24091</td></tr>
+<tr>
+<td title='api.Editor_Data.Get_CodeToEditor_asset_performance()'><b>Get_CodeToEditor_asset_performance</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>0</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.User.postUserLogin()'><b>postUserLogin</b><br>Test class: api.User</td>
+<td></td>
+<td>1</td>
+<td>api.User@fbd1f6</td></tr>
+<tr>
+<td title='api.Portfolio.getPortfolioDrawdownGraph()'><b>getPortfolioDrawdownGraph</b><br>Test class: api.Portfolio</td>
+<td></td>
+<td>2</td>
+<td>api.Portfolio@1ce24091</td></tr>
+<tr>
+<td title='api.Portfolio.getAllocation_Percentage_PlotGraph()'><b>getAllocation_Percentage_PlotGraph</b><br>Test class: api.Portfolio</td>
+<td></td>
+<td>9</td>
+<td>api.Portfolio@1ce24091</td></tr>
+<tr>
+<td title='api.Editor_Data.Get_CodeToEditor_portfolio_growth()'><b>Get_CodeToEditor_portfolio_growth</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>0</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.Portfolio.getAssetPerfomanceGraph()'><b>getAssetPerfomanceGraph</b><br>Test class: api.Portfolio</td>
+<td></td>
+<td>2</td>
+<td>api.Portfolio@1ce24091</td></tr>
+<tr>
+<td title='api.Editor_Data.get_code_to_editor_backtest_Monthly_heatmap()'><b>get_code_to_editor_backtest_Monthly_heatmap</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>1</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.Portfolio.uploadFile()'><b>uploadFile</b><br>Test class: api.Portfolio</td>
+<td></td>
+<td>2</td>
+<td>api.Portfolio@1ce24091</td></tr>
+<tr>
+<td title='api.Portfolio.getportfolioGrowthGraph()'><b>getportfolioGrowthGraph</b><br>Test class: api.Portfolio</td>
+<td></td>
+<td>3</td>
+<td>api.Portfolio@1ce24091</td></tr>
+<tr>
+<td title='api.Editor_Data.put_save_code_db_Drawdown_graph()'><b>put_save_code_db_Drawdown_graph</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>1</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.Editor_Data.get_shareReport()'><b>get_shareReport</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>1</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.Editor_Data.Get_CodeToEditor_portfolio_distribution()'><b>Get_CodeToEditor_portfolio_distribution</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>1</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.CornJob.poststore_prices_binance()'><b>poststore_prices_binance</b><br>Test class: api.CornJob</td>
+<td></td>
+<td>0</td>
+<td>api.CornJob@40005471</td></tr>
+<tr>
+<td title='api.Editor_Data.put_save_code_db_Monthly_heatmap()'><b>put_save_code_db_Monthly_heatmap</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>1</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.Portfolio.getDrawdown_Graph()'><b>getDrawdown_Graph</b><br>Test class: api.Portfolio</td>
+<td></td>
+<td>9</td>
+<td>api.Portfolio@1ce24091</td></tr>
+<tr>
+<td title='api.Editor_Data.put_save_code_db_Portfolio_allocation_plot_mtm()'><b>put_save_code_db_Portfolio_allocation_plot_mtm</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>1</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.Editor_Data.get_code_to_editor_backtest_Drawdown_graph()'><b>get_code_to_editor_backtest_Drawdown_graph</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>1</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.User.updateUser()'><b>updateUser</b><br>Test class: api.User</td>
+<td></td>
+<td>1</td>
+<td>api.User@fbd1f6</td></tr>
+<tr>
+<td title='api.User.logoutUser()'><b>logoutUser</b><br>Test class: api.User</td>
+<td></td>
+<td>0</td>
+<td>api.User@fbd1f6</td></tr>
+<tr>
+<td title='api.Editor_Data.put_save_code_db_Allocation_percentage_plot()'><b>put_save_code_db_Allocation_percentage_plot</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>1</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.User.getAllUserList()'><b>getAllUserList</b><br>Test class: api.User</td>
+<td></td>
+<td>1</td>
+<td>api.User@fbd1f6</td></tr>
+<tr>
+<td title='api.CornJob.poststore_prices_coinpaprika()'><b>poststore_prices_coinpaprika</b><br>Test class: api.CornJob</td>
+<td></td>
+<td>2</td>
+<td>api.CornJob@40005471</td></tr>
+<tr>
+<td title='api.Editor_Data.get_code_to_editor_backtest_Monthly_pnl_heatmap()'><b>get_code_to_editor_backtest_Monthly_pnl_heatmap</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>1</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.Portfolio.getPortfolioportfolioDistributionGraph()'><b>getPortfolioportfolioDistributionGraph</b><br>Test class: api.Portfolio</td>
+<td></td>
+<td>2</td>
+<td>api.Portfolio@1ce24091</td></tr>
+<tr>
+<td title='api.Editor_Data.postUserLogin()'><b>postUserLogin</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>1</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.CornJob.poststore_prices_coingecko()'><b>poststore_prices_coingecko</b><br>Test class: api.CornJob</td>
+<td></td>
+<td>54</td>
+<td>api.CornJob@40005471</td></tr>
+<tr>
+<td title='api.CornJob.postUserLogin()'><b>postUserLogin</b><br>Test class: api.CornJob</td>
+<td></td>
+<td>3</td>
+<td>api.CornJob@40005471</td></tr>
+<tr>
+<td title='api.CornJob.poststore_prices_coinapi()'><b>poststore_prices_coinapi</b><br>Test class: api.CornJob</td>
+<td></td>
+<td>3</td>
+<td>api.CornJob@40005471</td></tr>
+<tr>
+<td title='api.Editor_Data.put_save_code_db_Portfolio_growth_plot()'><b>put_save_code_db_Portfolio_growth_plot</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>1</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.Editor_Data.get_code_to_editor_backtest_Portfolio_growth_plot()'><b>get_code_to_editor_backtest_Portfolio_growth_plot</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>1</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.Editor_Data.get_shareReportfile()'><b>get_shareReportfile</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>1</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.Portfolio.getMonthly_Pnl_HeatmapGraph()'><b>getMonthly_Pnl_HeatmapGraph</b><br>Test class: api.Portfolio</td>
+<td></td>
+<td>9</td>
+<td>api.Portfolio@1ce24091</td></tr>
+<tr>
+<td title='api.Editor_Data.get_code_to_editor_backtest_Portfolio_allocation_plot_mtm()'><b>get_code_to_editor_backtest_Portfolio_allocation_plot_mtm</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>1</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.Portfolio.getPortfolio_Allocation_Plot_mtmGraph()'><b>getPortfolio_Allocation_Plot_mtmGraph</b><br>Test class: api.Portfolio</td>
+<td></td>
+<td>9</td>
+<td>api.Portfolio@1ce24091</td></tr>
+<tr>
+<td title='api.Editor_Data.Get_CodeToEditor_portfolio_drawdown()'><b>Get_CodeToEditor_portfolio_drawdown</b><br>Test class: api.Editor_Data</td>
+<td></td>
+<td>0</td>
+<td>api.Editor_Data@55fe41ea</td></tr>
+<tr>
+<td title='api.Portfolio.postUserLogin()'><b>postUserLogin</b><br>Test class: api.Portfolio</td>
+<td></td>
+<td>1</td>
+<td>api.Portfolio@1ce24091</td></tr>
+<tr>
+<td title='api.User.postUserCreate()'><b>postUserCreate</b><br>Test class: api.User</td>
+<td></td>
+<td>1</td>
+<td>api.User@fbd1f6</td></tr>
+<tr>
+<td title='api.Portfolio.getMonthly_HeatmapGraph()'><b>getMonthly_HeatmapGraph</b><br>Test class: api.Portfolio</td>
+<td></td>
+<td>9</td>
+<td>api.Portfolio@1ce24091</td></tr>
+</table><p>
+</body>
+</html>
